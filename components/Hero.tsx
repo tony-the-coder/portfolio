@@ -5,6 +5,12 @@ import { TextGenerateEffect } from './ui/text-generate-effect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
 
+
+// TODO #2: Refactor the hero component to use the new Spotlight component and ensure it is responsive and visually appealing across different screen sizes and review the black-100 is not working as expected
+// TODO #3: Ensure the hero section is accessible and follows best practices for web development, including semantic HTML and ARIA attributes where necessary
+// TODO #4: Add a loading state to the hero section to improve user experience while the page is loading
+
+
 const hero = () => {
     return (
         <div className='pb-20 pt-36'>
@@ -39,7 +45,7 @@ const hero = () => {
                     </h2>
                     <TextGenerateEffect
                         className='text-center text-[40px] md:text-5xl lg:text-6xl'
-                        words="Transforming Concepts into Seamless Experiences" />
+                        words="Transforming Concepts into Seamless User Experiences" />
                     <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
                         Hi, I&apos;m Tony a Next.JS developer based in the US.
                     </p>
