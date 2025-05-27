@@ -14,6 +14,7 @@ export const TextGenerateEffect = ({
   filter?: boolean;
   duration?: number;
 }) => {
+  // TODO #1: Need to determine why the wordsArray is not being used in the effect and why the effect is not being applied correctly.
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
   useEffect(() => {
@@ -37,7 +38,8 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className={`${idx > 3 ? 'text-purple' : 'dark:text-white text-black'} opacity-0`}
+              className={`${idx > 3 ? 'text-purple' :
+                'dark:text-white text-black'} opacity-0`}
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}
