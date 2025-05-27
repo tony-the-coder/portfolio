@@ -1,4 +1,8 @@
 import React from 'react'
+// TODO #5: Review why the button color is purple right now and ensure it matches the design system and be transparent
+// TODO #6: Ensure the button is accessible and follows best practices for web development, including semantic HTML and ARIA attributes where necessary
+
+
 
 const MagicButton = ({
     title, icon, position, handleClick, otherClasses

@@ -14,7 +14,8 @@ export const TextGenerateEffect = ({
   filter?: boolean;
   duration?: number;
 }) => {
-  // TODO #1: Need to determine why the wordsArray is not being used in the effect and why the effect is not being applied correctly.
+  // TODO #1: Need to determine why the wordsArray is not being used in the effect and why the effect is not being applied correctly even though it is in renderWords
+
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
   useEffect(() => {
@@ -29,6 +30,7 @@ export const TextGenerateEffect = ({
         delay: stagger(0.2),
       }
     );
+    //TODO #7: Review why the effect is not being applied correctly and ensure it works as expected for scope.current
   }, [scope.current]);
 
   const renderWords = () => {
